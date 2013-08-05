@@ -77,8 +77,8 @@ require('glob.php');
                 <h2 class="form-signin-heading"><?php echo $website_title; ?></h2>
                 <input name="user" type="text" class="input-block-level" placeholder="用户名" value="">
                 <input name="pass" type="password" class="input-block-level" placeholder="密码" value="">
-                <input name="vcode" type="text" class="input-block-level" placeholder="验证码" value="">
-                <a href="#"><img onclick="javascript:$('img').attr('src', 'vcode.php?r=' + Math.random());" src="vcode.php" style="width:150px;height:35px;"></a>
+                <!--<input name="vcode" type="text" class="input-block-level" placeholder="验证码" value="">
+                <a href="#"><img onclick="javascript:$('img').attr('src', 'vcode.php?r=' + Math.random());" src="vcode.php" style="width:150px;height:35px;"></a>-->
                 <label class="checkbox">
                     <input name="remember" type="checkbox" value="remember-me"> 记住我
                 </label>

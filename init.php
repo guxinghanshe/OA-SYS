@@ -29,7 +29,7 @@ if (isset($_GET['init']) == true) {
         plugerror('noadmin');
     }
 }
-$init_page_arr = array('center', 'message', 'disk_user', 'task_user', 'performance', 'diary', 'address_book', 'self', 'disk_share', 'task_center', 'message_board', 'message_center', 'system', 'backup', 'user', 'user_group');
+$init_page_arr = array('center', 'message', 'disk_user', 'task_user', 'performance', 'diary', 'address_book', 'self', 'disk_share', 'task_center', 'message_board', 'message_center', 'system', 'backup', 'user', 'user_group','chock_work');
 if (isset($init_page_arr[$init_page]) == false) {
     $init_page = 0;
 }
@@ -201,6 +201,7 @@ if ($config_backup_auto_on && isset($_GET['auto']) == false && isset($_SESSION['
                                     <li><a href="init.php?init=8"><i class="icon-share"></i> 文件共享中心</a></li>
                                     <li><a href="init.php?init=9"><i class="icon-tasks"></i> 生产任务中心</a></li>
                                     <li><a href="init.php?init=10"><i class="icon-comment"></i> 公共留言薄</a></li>
+                                    <li><a href="init.php?init=16"><i class="icon-comment"></i>部门例会工作</a></li>
                                 </ul>
                             </li>
                             <?php if($logged_admin == true){ ?>
@@ -238,6 +239,7 @@ if ($config_backup_auto_on && isset($_GET['auto']) == false && isset($_SESSION['
                             <li><a href="init.php?init=8"><i class="icon-share"></i> 文件共享中心</a></li>
                             <li><a href="init.php?init=9"><i class="icon-tasks"></i> 生产任务中心 <?php if($tip_task_center_row>0){ ?><span class="badge badge-Inverse"><?php echo $tip_task_center_row; ?></span><?php } ?></a></li>
                             <li><a href="init.php?init=10"><i class="icon-comment"></i> 公共留言薄</a></li>
+                            <li><a href="init.php?init=16"><i class="icon-comment"></i>部门例会工作</a></li>
                             <?php if($logged_admin == true){ ?>
                             <li class="nav-header">系统</li>
                             <li><a href="init.php?init=11"><i class="icon-envelope"></i> 消息中心</a></li>

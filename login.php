@@ -22,8 +22,10 @@ require(DIR_LIB . DS . 'oa-user.php');
  * 检查变量存在并转移给user类
  * @since 3
  */
-if (isset($_POST['user']) == true && isset($_POST['pass']) == true && isset($_POST['vcode']) == true) {
-    if ($_POST['vcode'] == $_SESSION['vcode']) {
+//if (isset($_POST['user']) == true && isset($_POST['pass']) == true && isset($_POST['vcode']) == true) {
+if (isset($_POST['user']) == true && isset($_POST['pass']) == true) {
+    //if ($_POST['vcode'] == $_SESSION['vcode']) {
+    if (true) {
         $remember = false;
         if (isset($_POST['remeber']) == true) {
             $remember = true;
